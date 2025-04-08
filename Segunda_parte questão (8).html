@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Q27 – Produtos e Preços</title>
+</head>
+
+<body>
+    <script> 
+    let produtos = [] 
+    let precos = [] 
+    for (let i = 0; i < 5; i++) { 
+        produtos[i] = prompt("Digite o nome do produto (" + (i + 1) + "/5):")
+         precos[i] = parseFloat(prompt("Digite o preço do produto (" + (i + 1) + "/5):")) } 
+         let contInf50 = 0, nomes50a100 = [], somaSup100 = 0, contSup100 = 0
+          for (let i = 0; i < 5; i++) { 
+            if (precos[i] < 50) contInf50++
+             if (precos[i] >= 50 && precos[i] <= 100) 
+             nomes50a100.push(produtos[i]) 
+            if (precos[i] > 100) { somaSup100 += precos[i]; contSup100++ } } 
+            let mediaSup100 = (contSup100 > 0) ? (somaSup100 / contSup100).toFixed(2) : 0 
+            alert("Quantidade de produtos com preço inferior a R$50: " + contInf50 + "\nProdutos com preço entre R$50 e R$100: " + nomes50a100.join(", ") + "\nMédia dos preços superiores a R$100: " + mediaSup100) </script>
+</body>
+
+</html>

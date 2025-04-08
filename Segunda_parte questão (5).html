@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Q24 – Locações Grátis</title>
+</head>
+
+<body>
+    <script> 
+    let nomes = [], locacoes = [] 
+    for (let i = 0; i < 8; i++) { 
+        nomes[i] = prompt("Digite o nome do cliente " + (i + 1) + ":") 
+        locacoes[i] = parseInt(prompt("Digite a quantidade de fitas locadas (cliente " + (i + 1) + "):")) } 
+        let relatorio = "" 
+        for (let i = 0; i < 8; i++) { 
+            relatorio += nomes[i] + " tem direito a " + Math.floor(locacoes[i] / 10) + " locação(ões) grátis.\n" } 
+            alert(relatorio) </script>
+</body>
+
+</html>

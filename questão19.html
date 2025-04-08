@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Q19 – Substituir Zeros</title>
+</head>
+
+<body>
+    <script> 
+    let vetor1 = [] 
+    let vetor2 = [] 
+    for (let i = 0; i < 30; i++) { 
+        vetor1[i] = parseInt(prompt("Digite o número (" + (i + 1) + "/30):")) 
+        vetor2[i] = (vetor1[i] === 0) ? 1 : vetor1[i] } 
+        alert("Vetor original: " + vetor1.join(", ") + "\nVetor modificado: " + vetor2.join(", ")) </script>
+</body>
+
+</html>

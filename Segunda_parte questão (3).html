@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Q22 – Posições com valor 30</title>
+</head>
+
+<body>
+    <script> 
+    let vetor = [] 
+    let posicoes = [] 
+    for (let i = 0; i < 15; i++) { 
+        vetor[i] = parseInt(prompt("Digite o número (" + (i + 1) + "/15):")) 
+        if (vetor[i] === 30) posicoes.push(i) }
+         alert("Posições com valor 30: " + posicoes.join(", ")) </script>
+</body>
+
+</html>

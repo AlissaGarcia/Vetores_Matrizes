@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Q25 – Soma das Subtrações</title>
+</head>
+
+<body>
+    <script> 
+    let vetorA = []; vetorB = [] ;
+    for (let i = 0; i < 5; i++) { 
+        vetorA[i] = parseInt(prompt("Vetor A - Digite o número (" + (i + 1) + "/5):")) } 
+        for (let i = 0; i < 5; i++) { 
+            vetorB[i] = parseInt(prompt("Vetor B - Digite o número (" + (i + 1) + "/5):")) } 
+            let soma = 0 
+            soma += vetorB[4]- vetorA[1] 
+            soma += vetorB[3] - vetorA[1] 
+            soma += vetorB[2] - vetorA[1] 
+            soma += vetorB[1] - vetorA[1] 
+            soma += vetorB[0] - vetorA[1] 
+            alert("Resultado da soma das subtrações: " + soma) </script>
+</body>
+
+</html>

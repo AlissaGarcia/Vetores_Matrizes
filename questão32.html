@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Q50 – Ordenação Decrescente</title>
+</head>
+
+<body>
+    <script> 
+    let vetor1 = [], vetor2 = [] 
+    for (let i = 0; i < 10; i++) { 
+        vetor1[i] = parseInt(prompt("Vetor 1 - Digite o número (" + (i + 1) + "/10):")) } 
+        for (let i = 0; i < 10; i++) { vetor2[i] = parseInt(prompt("Vetor 2 - Digite o número (" + (i + 1) + "/10):")) } 
+        let vetor3 = vetor1.concat(vetor2) 
+        vetor3.sort(function (a, b) { return b - a }) 
+        alert("Vetor ordenado decrescentemente: " + vetor3.join(", ")) </script>
+</body>
+
+</html>

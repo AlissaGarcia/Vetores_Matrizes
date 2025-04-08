@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Q33 – Matrículas Comuns</title>
+</head>
+
+<body>
+    <script> 
+    let logica = [] 
+    let linguagens = [] 
+    let comuns = [] 
+    let nL = parseInt(prompt("Quantos alunos em Lógica? (max 15)")) 
+    for (let i = 0; i < nL; i++) { 
+        logica[i] = prompt("Digite a matrícula do aluno de Lógica (" + (i + 1) + "/" + nL + "):") } 
+        let nLi = parseInt(prompt("Quantos alunos em Linguagem? (max 10)")) 
+        for (let i = 0; i < nLi; i++) { 
+            linguagens[i] = prompt("Digite a matrícula do aluno de Linguagem (" + (i + 1) + "/" + nLi + "):") } 
+            for (let i = 0; i < logica.length; i++) { 
+                if (linguagens.indexOf(logica[i]) !== -1) { comuns.push(logica[i]) } } 
+                alert("Matrículas comuns: " + comuns.join(", ")) </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Q30 – Aluno com Maior Média</title>
+</head>
+
+<body>
+    <script> 
+    let nomes = [] 
+    let medias = [] 
+    for (let i = 0; i < 7; i++) { 
+        nomes[i] = prompt("Digite o nome do aluno (" + (i + 1) + "/7):") 
+        medias[i] = parseFloat(prompt("Digite a média final de " + nomes[i] + ":")) }
+         let max = medias[0], pos = 0 
+         for (let i = 1; i < 7; i++) { 
+            if (medias[i] > max) { max = medias[i]; pos = i } } 
+            alert("Aluno com maior média: " + nomes[pos] + " (Média: " + max + ")") </script>
+</body>
+
+</html>

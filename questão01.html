@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Q1 – Números Positivos</title>
+</head>
+
+<body>
+    <script> 
+    let vetor = []
+     for (let i = 0; i < 50; i++) { 
+        vetor[i] = parseInt(prompt("Digite o número (" + (i + 1) + "/50):")) } 
+        let positivos = [] 
+        for (let i = 0; i < 50; i++) { 
+            if (vetor[i] > 0) positivos.push(vetor[i]) } 
+            alert("Números positivos: " + positivos.join(", ")) 
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Q26 – Divisão pelo Maior</title>
+</head>
+
+<body>
+    <script> 
+    let vetor = [] 
+    for (let i = 0; i < 15; i++) { 
+        vetor[i] = parseFloat(prompt("Digite o número (" + (i + 1) + "/15):")) } 
+        let max = Math.max(...vetor) 
+        let resultado = [] 
+        for (let i = 0; i < 15; i++) { resultado.push((vetor[i] / max).toFixed(2)) } 
+        alert("Vetor após divisão: " + resultado.join(", ")) </script>
+</body>
+
+</html>

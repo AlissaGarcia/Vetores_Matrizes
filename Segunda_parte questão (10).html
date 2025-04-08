@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Q29 – Negativos e Soma dos Positivos</title>
+</head>
+
+<body>
+    <script> 
+    let vetor = [] 
+    let somaPos = 0, contNeg = 0 
+    for (let i = 0; i < 10; i++) { 
+        vetor[i] = parseFloat(prompt("Digite o número real (" + (i + 1) + "/10):")) 
+        if (vetor[i] < 0) contNeg++ 
+        else somaPos += vetor[i] } 
+        alert("Quantidade de números negativos: " + contNeg + "\nSoma dos números positivos: " + somaPos) </script>
+</body>
+
+</html>

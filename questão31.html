@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Q49 – Relatório de Vendedores</title>
+</head>
+
+<body>
+    <script> 
+    let nomes = [], vendas = [], comissao = [] 
+    let valoresReceber = [] 
+    for (let i = 0; i < 10; i++) { 
+        nomes[i] = prompt("Digite o nome do vendedor (" + (i + 1) + "/10):") 
+        vendas[i] = parseFloat(prompt("Digite o total de vendas de " + nomes[i] + ":"))
+         comissao[i] = parseFloat(prompt("Digite o percentual de comissão de " + nomes[i] + ":")) 
+         valoresReceber[i] = vendas[i] * (comissao[i] / 100) } 
+         let totalVendas = vendas.reduce((a, b) => a + b, 0) 
+         let maior = valoresReceber[0], menor = valoresReceber[0], posMaior = 0, posMenor = 0 
+         for (let i = 1; i < 10; i++) { 
+            if (valoresReceber[i] > maior) { 
+                maior = valoresReceber[i]; posMaior = i } 
+                if (valoresReceber[i] < menor) { 
+                    menor = valoresReceber[i]; posMenor = i } } 
+                    let rel = "Relatório:\n" 
+                    for (let i = 0; i < 10; i++) { 
+                        rel += nomes[i] + " receberá R$ " + valoresReceber[i].toFixed(2) + "\n" }
+                         rel += "Total de vendas: R$ " + totalVendas.toFixed(2) + "\n" 
+                         rel += "Maior valor: R$ " + maior.toFixed(2) + " (vendedor: " + nomes[posMaior] + ")\n" 
+                         rel += "Menor valor: R$ " + menor.toFixed(2) + " (vendedor: " + nomes[posMenor] + ")" 
+                         alert(rel) </script>
+</body>
+
+</html>

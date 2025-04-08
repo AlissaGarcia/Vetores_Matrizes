@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Q23 – Vetores de Pares e Ímpares</title>
+</head>
+
+<body>
+    <script> 
+    let vetor = [] 
+    let pares = [], impares = [] 
+    for (let i = 0; i < 10; i++) { 
+        vetor[i] = parseInt(prompt("Digite o número (" + (i + 1) + "/10):")) 
+        if (vetor[i] % 2 === 0) pares.push(vetor[i]) 
+        else impares.push(vetor[i]) } 
+    alert("Pares: " + pares.join(", ") + "\nÍmpares: " + impares.join(", ")) </script>
+</body>
+
+</html>

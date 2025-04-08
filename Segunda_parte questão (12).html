@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Q31 – Aumento de Preço</title>
+</head>
+
+<body>
+    <script> 
+    let nomes = [], codigos = [], precos = [], relatorio = "" 
+    for (let i = 0; i < 10; i++) {
+         nomes[i] = prompt("Digite o nome do produto (" + (i + 1) + "/10):") 
+         codigos[i] = parseInt(prompt("Digite o código do produto (" + (i + 1) + "/10):"))
+          precos[i] = parseFloat(prompt("Digite o preço do produto (" + (i + 1) + "/10):")) } 
+          for (let i = 0; i < 10; i++) { 
+          let novoPreco = precos[i] 
+          let cond1 = (codigos[i] % 2 === 0) 
+          let cond2 = (precos[i] > 1000) 
+             if (cond1 && cond2) { novoPreco = precos[i] * 1.20 }
+              else if (cond1) { novoPreco = precos[i] * 1.15 } 
+              else if (cond2) { novoPreco = precos[i] * 1.10 } 
+              relatorio += "Nome: " + nomes[i] + " | Código: " + codigos[i] + " | Preço: " + precos[i].toFixed(2) + " | Novo Preço: " + novoPreco.toFixed(2) + "\n" } 
+              alert(relatorio) </script>
+</body>
+
+</html>

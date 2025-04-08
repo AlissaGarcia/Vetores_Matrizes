@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Q21 – Múltiplos de 2 e 3</title>
+</head>
+
+<body>
+    <script> 
+    let vetor = [] 
+    let mult2 = [], mult3 = [], mult2e3 = [] 
+    for (let i = 0; i < 7; i++) { 
+        vetor[i] = parseInt(prompt("Digite o número (" + (i + 1) + "/7):")) 
+        if (vetor[i] % 2 === 0) mult2.push(vetor[i]) 
+        if (vetor[i] % 3 === 0) mult3.push(vetor[i]) 
+        if (vetor[i] % 2 === 0 && vetor[i] % 3 === 0) mult2e3.push(vetor[i]) }
+         alert("Múltiplos de 2: " + mult2.join(", ") + "\nMúltiplos de 3: " + mult3.join(", ") + "\nMúltiplos de 2 e 3: " + mult2e3.join(", ")) </script>
+</body>
+
+</html>
